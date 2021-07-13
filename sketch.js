@@ -28,9 +28,10 @@ function setup() {
 function draw() {
   background(spacebg); 
   
-if(hasDocked(iss,spacecraft1))
+if(spacecraft1.y ===333 && iss.y === 200)
 {
    fill("white")
+   textSize(40)
   text("DOCKING SUCCESSFUL !!",400,400)
 }
 
@@ -75,13 +76,4 @@ function changePosition(x,y)
     spacecraft1.x = spacecraft1.x + x;
     spacecraft1.y = spacecraft1.y + y;
 }
- function hasDocked(liss,lspacecraft)
- {
-    issTop=liss.y
-    craftBottom=lspacecraft.y
-    if(issTop>=craftBottom)
-    {
-      return true 
-    }
-    return false;
- }
+ 

@@ -28,22 +28,12 @@ function setup() {
 function draw() {
   background(spacebg); 
   
-if(spacecraft1.y ===333 && iss.y === 200)
+if(spacecraft1.y===333 && iss.y===200)
 {
    fill("white")
    textSize(40)
   text("DOCKING SUCCESSFUL !!",400,400)
 }
-
-/*if(iss.x-spacecraft1.x < iss.width/2+spacecraft1.width/2
-  &&spacecraft1.x-iss.x < iss.width/2+spacecraft1.width/2
-  &&iss.x-spacecraft1.x < iss.height/2+spacecraft1.height/2
-  &&spacecraft1.x-iss.x < iss.height/2+spacecraft1.height/2)
-{
-  fill("white")
-  text("DOCKING SUCCESSFUL !!",400,400)
-}*/
-
 
   if(keyDown(LEFT_ARROW))
   {
